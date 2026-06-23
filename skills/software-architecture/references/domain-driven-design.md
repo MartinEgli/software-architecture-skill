@@ -1,7 +1,8 @@
 # Domain-Driven Design
 
-Use DDD when domain complexity, language, ownership, or service boundaries are
-central.
+Use this reference for a lightweight DDD check inside software architecture.
+When the user needs deep context mapping, subdomain classification, aggregate
+design, event storming, or ubiquitous language work, use `domain-driven-design`.
 
 ## Strategic DDD
 

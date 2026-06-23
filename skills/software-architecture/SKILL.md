@@ -39,6 +39,10 @@ task is about concrete software systems. Use `enterprise-architecture` for EA.
 Do not use for detailed security control approval. Use
 `enterprise-security-architecture` for security architecture.
 
+Do not use for deep DDD modeling when the main output is a context map,
+subdomain classification, aggregate model, event storming summary, or
+ubiquitous language glossary. Use `domain-driven-design` for that.
+
 ## Mandatory Rules
 
 - Start from domain, use case, quality attributes, and constraints.
@@ -81,8 +85,8 @@ data ownership, quality attributes, and delivery risk.
 
 ### /sa ddd
 
-Identify domain, subdomains, bounded contexts, aggregates, domain events,
-ubiquitous language, and context map. Read `references/domain-driven-design.md`.
+Do a lightweight DDD check for software architecture. For deep domain modeling,
+handoff to `domain-driven-design`. Read `references/domain-driven-design.md`.
 
 ### /sa clean-architecture
 
