@@ -5,7 +5,8 @@ description: >
   Design, bounded contexts, Clean Architecture, Clean Coding review, ADRs,
   integration patterns, API and data ownership, quality attributes, deployment
   risks, modularity, maintainability, and Clean AI design for AI-enabled
-  software systems.
+  software systems, including Mermaid, PlantUML, C4, sequence, component,
+  container, deployment, and Clean Architecture diagrams.
 ---
 
 # Software Architecture
@@ -30,6 +31,9 @@ Use when the user asks for:
 - data ownership and module boundaries
 - quality attributes
 - AI-enabled software design
+- software architecture diagrams such as C4 context/container/component,
+  sequence, deployment, module, Clean Architecture, API, event, or data
+  ownership views
 
 ## Do Not Use When
 
@@ -57,6 +61,8 @@ productive-use governance of AI-generated artifacts. Use
 - Mark assumptions and missing inputs.
 - Tie recommendations to coupling, cohesion, changeability, testability,
   operability, and business value.
+- When creating diagrams, stay within software architecture scope and read
+  `references/diagrams.md`.
 - Do not invent system behavior, ownership, compliance duties, or production
   facts.
 - Escalate security-specific findings to `enterprise-security-architecture`.
@@ -125,6 +131,11 @@ Prepare or review an architecture decision record. Read `references/adr.md`.
 Review APIs, events, messaging, consistency, contract ownership, and integration
 risks. Read `references/integration-patterns.md`.
 
+### /sa diagram
+
+Create or review software architecture diagrams using Mermaid, PlantUML, C4, or
+UML-style notation. Read `references/diagrams.md`.
+
 ## Evidence Handling
 
 - Evidence: supplied code, diagram, API contract, ADR, schema, log, inventory,
@@ -148,6 +159,8 @@ another format.
 - Risks and assumptions are visible.
 - ADR or decision need is explicit.
 - Clean AI concerns are separated when AI behavior is involved.
+- Diagrams show concrete software responsibilities, boundaries, dependencies,
+  data ownership, runtime flows, or quality-attribute trade-offs.
 
 ## Boundaries
 
@@ -160,4 +173,6 @@ another format.
 
 - Structured, practical, design-oriented.
 - Use diagrams only when requested or easy to express as text.
+- Prefer Mermaid for lightweight Markdown-native diagrams and PlantUML/C4 for
+  stable or layered architecture-as-code.
 - Prefer concrete boundaries, responsibilities, decisions, and next steps.
