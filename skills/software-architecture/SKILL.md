@@ -43,6 +43,10 @@ Do not use for deep DDD modeling when the main output is a context map,
 subdomain classification, aggregate model, event storming summary, or
 ubiquitous language glossary. Use `domain-driven-design` for that.
 
+Do not use for final evidence acceptance, architecture gate approval, or
+productive-use governance of AI-generated artifacts. Use
+`mournival-architecture` for those.
+
 ## Mandatory Rules
 
 - Start from domain, use case, quality attributes, and constraints.
@@ -58,6 +62,10 @@ ubiquitous language glossary. Use `domain-driven-design` for that.
 - Escalate security-specific findings to `enterprise-security-architecture`.
 - Escalate enterprise roadmap and capability questions to
   `enterprise-architecture`.
+- If domain, use case, quality attribute, or runtime constraint is missing,
+  state the assumption and its design impact before making a decision.
+- Escalate accepted-knowledge, traceability, and go/no-go governance decisions
+  to `mournival-architecture`.
 
 ## Inputs Expected
 
@@ -81,7 +89,9 @@ known domain boundaries. Read `references/software-architecture-method.md`.
 ### /sa review
 
 Review service or system architecture for coupling, cohesion, boundaries,
-data ownership, quality attributes, and delivery risk.
+data ownership, quality attributes, and delivery risk. Read
+`references/software-architecture-method.md` and
+`references/quality-attributes.md`.
 
 ### /sa ddd
 
