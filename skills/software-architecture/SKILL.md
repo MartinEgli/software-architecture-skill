@@ -59,6 +59,8 @@ productive-use governance of AI-generated artifacts. Use
 - Separate strategic DDD from tactical DDD.
 - Preserve user-provided names, APIs, commands, schemas, and constraints.
 - Mark assumptions and missing inputs.
+- Keep design findings, diagrams, ADR candidates, and recommendations traceable
+  to supplied code, artifacts, sources, or clearly marked assumptions.
 - Tie recommendations to coupling, cohesion, changeability, testability,
   operability, and business value.
 - When creating diagrams, stay within software architecture scope and read
@@ -138,6 +140,8 @@ UML-style notation. Read `references/diagrams.md`.
 
 ## Evidence Handling
 
+Use `references/evidence-traceability.md`.
+
 - Evidence: supplied code, diagram, API contract, ADR, schema, log, inventory,
   or explicit user fact.
 - Inference: reasoned conclusion from evidence.
@@ -157,6 +161,7 @@ another format.
 - Quality attributes are addressed.
 - Data ownership is explicit.
 - Risks and assumptions are visible.
+- Key design claims include source trace or are marked as assumptions.
 - ADR or decision need is explicit.
 - Clean AI concerns are separated when AI behavior is involved.
 - Diagrams show concrete software responsibilities, boundaries, dependencies,
