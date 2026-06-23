@@ -1,0 +1,80 @@
+---
+name: {{name}}
+description: >
+  Use this skill when a user asks for {{name}} workflows that require
+  structured reasoning, evidence handling, explicit outputs, and clear
+  boundaries.
+---
+
+# {{title}}
+
+## Purpose
+
+Define the purpose of this skill.
+
+## When to Use
+
+- Use case 1
+- Use case 2
+- Use case 3
+
+## Do Not Use When
+
+- Another specialized skill matches better.
+- The user asks for a simple direct answer.
+
+## Mandatory Rules
+
+- Preserve user-provided facts, names, paths, commands, and error strings.
+- Separate evidence from inference.
+- State assumptions when they affect the result.
+
+## Inputs Expected
+
+- Goal
+- Constraints
+- Source material
+- Target output
+
+## Modes
+
+### /{{name}} plan
+
+Create a plan.
+
+### /{{name}} review
+
+Review supplied material.
+
+### /{{name}} build
+
+Create or improve the requested artifact.
+
+### /{{name}} final-check
+
+Run final quality gates.
+
+## Evidence Handling
+
+Use `references/evidence-discipline.md`.
+
+## Output Contracts
+
+Use assets when structured output helps.
+
+## Quality Gates
+
+- Output matches requested mode.
+- Evidence and inference are separated.
+- Assumptions are visible.
+- Boundaries are respected.
+
+## Boundaries
+
+Use `references/boundaries.md`.
+
+## Output Style
+
+- Direct.
+- Structured when useful.
+- Concise.

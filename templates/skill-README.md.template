@@ -1,0 +1,18 @@
+# {{title}}
+
+Derived skill from `single-skill-template`.
+
+## Modes
+
+- `/{{name}} plan`
+- `/{{name}} review`
+- `/{{name}} build`
+- `/{{name}} final-check`
+
+## Maintain
+
+Run:
+
+```powershell
+npm run validate
+```
