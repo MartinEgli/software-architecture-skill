@@ -148,6 +148,9 @@ Use `references/evidence-traceability.md`.
 - Assumption: useful but unverified.
 - Gap: missing input that can change architecture decision.
 
+Include an Evidence Receipt for substantial findings, decisions, diagrams, or
+recommendations.
+
 ## Output Contracts
 
 Use `assets/templates/software-architecture-output.md` unless user asks for
