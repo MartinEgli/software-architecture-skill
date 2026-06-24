@@ -1,6 +1,8 @@
 interface:
   display_name: "Software Architecture"
   short_description: "DDD, Clean Architecture, and ADRs"
+  icon_small: "./assets/software-architecture-small.svg"
+  icon_large: "./assets/software-architecture.svg"
   default_prompt: "Use $software-architecture to review this system design for DDD boundaries, Clean Architecture, quality attributes, ADRs, and Clean AI concerns."
 
 policy:
