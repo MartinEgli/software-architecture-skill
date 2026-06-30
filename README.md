@@ -17,3 +17,10 @@ npm run validate
 npm run test
 npm run package
 ```
+
+## Continuous Improvement
+
+This skill supports an explicit feedback loop. Use /software-architecture feedback to
+capture lessons and /software-architecture improve to propose changes. Improvements must
+remain traceable, validated, committed on a feature branch, and pushed before
+they become part of the released skill behavior.

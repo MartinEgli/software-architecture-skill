@@ -138,9 +138,22 @@ risks. Read `references/integration-patterns.md`.
 Create or review software architecture diagrams using Mermaid, PlantUML, C4, or
 UML-style notation. Read `references/diagrams.md`.
 
-## Evidence Handling
 
-Use `references/evidence-traceability.md`.
+### /software-architecture feedback
+
+Capture lessons from the current run without changing the skill automatically.
+Use eferences/feedback-route.md to classify user feedback, observed gaps,
+assumptions, candidate improvements, rejected ideas, and routed follow-ups.
+
+### /software-architecture improve
+
+Review accumulated feedback and propose concrete skill changes. Use
+ssets/improvement-proposal-template.md. Do not modify behavior until the
+proposal names evidence, affected files, risks, validation commands, versioning
+impact, and rollback considerations.
+## Evidence Handling
+Use `references/evidence-traceability.md`.
+Use eferences/feedback-route.md when capturing or applying lessons from a run.
 
 - Evidence: supplied code, diagram, API contract, ADR, schema, log, inventory,
   or explicit user fact.
@@ -177,8 +190,15 @@ another format.
 - Do not turn DDD into ceremony when domain complexity is low.
 - Do not treat AI output as source of truth without evidence and evaluation.
 
-## Output Style
 
+## Continuous Improvement
+
+This skill is self-improving only through an explicit, auditable feedback loop:
+feedback -> evidence -> improvement proposal -> feature branch -> validation ->
+commit -> push -> version or changelog update when needed. Do not silently alter
+skill behavior based on a single run. Preserve rejected and deferred ideas so
+future maintainers can see why they were not applied.
+## Output Style
 - Structured, practical, design-oriented.
 - Use diagrams only when requested or easy to express as text.
 - Prefer Mermaid for lightweight Markdown-native diagrams and PlantUML/C4 for
